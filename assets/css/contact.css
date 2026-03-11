@@ -1,0 +1,185 @@
+@charset "utf-8";
+  /* @media screen and (max-width: 768px) */
+
+html{scroll-behavior: smooth;}
+
+body{
+    
+.noto-sans-jp-<uniquifier> {
+  font-family: "Noto Sans JP","Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+label, input, textarea, select, button{
+    cursor: pointer;
+    
+}
+}
+
+.section{
+    padding: 30px 15px;
+   }
+.section.section-secondary{
+    background-color: #efefef;
+}
+.section-headline{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 40px ;
+}
+.section-button{
+    text-align: center;
+}
+
+ .hero{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero > strong {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #000000;
+    display: block;
+    width: 7
+    
+    0%;
+    text-align: center;
+}
+
+.hero > video{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height:auto;
+}
+.hero-particles{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+
+}
+
+@media screen and (max-width: 768px){
+    .hero{ 
+          width: 100vw;
+    height: 30vh;
+    position: relative;
+    overflow: hidden
+
+        
+    }
+
+    .hero > strong{
+        font-size: 30px;
+        width: 100%;
+    }
+    .hero > video{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+    }
+   .hero-particles{
+    height: 90%;
+   }
+
+}
+
+.grid{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.grid-item{
+
+}
+
+.grid{
+    list-style: none;
+} /*これはリストの点を消すためのコード。grid-col-4にのみ適用*/
+
+.grid-col-2 > .grid-item{
+    width: 50%;
+}
+.grid-col-3 > .grid-item{
+    width: 33.33%;
+}
+.grid-col-4 > .grid-item{
+    width: 25%;
+}
+
+ 
+    
+@media screen and (max-width: 768px){
+    .grid{display: block;}
+
+       .grid{
+    list-style: none;
+} /*これはリストの点を消すためのコード。*/
+
+.grid-col-2 > .grid-item,
+.grid-col-3 > .grid-item,
+.grid-col-4 > .grid-item {
+    width: 100%;
+    margin: 20px 0;
+}
+}
+
+
+.card{text-align: center;
+  margin: 0 30%;
+
+}
+.card-link{
+  display: block;
+  color: black;
+   transition: background-color .25s;
+}
+.card-link:hover{
+   background-color: #ada2a2;
+}
+.card-label{}
+.card-image{
+  width: 150px;
+  height: 150px;
+}
+.card-info   {}    
+.card-headl {}
+ .card-description{}
+
+ @media screen and (max-width: 768px){
+ .card-image{ 
+  width: 120px;
+  height: 120px;
+  
+ }
+.card-headline{
+  font-size: 20px;
+}
+ }
+
+.footer{
+    background-color: #333;
+    color: #fff;
+}
+ .footer-line{
+    border-color: #444;
+}
+.footer-copy {
+   display: block;
+   text-align: center;
+    padding: 10px;
+}
