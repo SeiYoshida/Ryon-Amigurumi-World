@@ -184,6 +184,7 @@ hero
 }
 .about-image {
     width: 50%;
+    height: 100vh;
 }
 .about-caption{
     padding-left: 15px;
@@ -210,7 +211,9 @@ hero
 
     .about{display: block;}
     .about-image{
+        
         width: 100%;
+        height:  100%;
         margin-bottom: 20px;
     }
     .about-headline{

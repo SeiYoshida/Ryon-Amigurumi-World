@@ -1,4 +1,89 @@
 @charset "utf-8";
   /* @media screen and (max-width: 768px) */
 
-  
+  body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #333;
+    color: white;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: calc(25% - 10px);
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item img {
+    /* ... 既存のコード ... */
+    transition: transform 0.3s ease-in-out; /* アニメーションをなめらかに */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* 1.05倍に拡大 */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.caption {
+    padding: 10px;
+    text-align: center;
+}
+
+.caption h3 {
+    font-size: 1rem;
+    margin: 0 0 5px;
+}
+
+.caption p {
+    font-size: 0.8rem;
+    color: #999;
+    margin: 0;
+}
+/* ------------------------------------------------ */
+/* ここからがレスポンシブ対応のメディアクエリ */
+/* ------------------------------------------------ */
+
+/* タブレット用のスタイル（画面幅が768px以下の場合に適用） */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 10px);
+    }
+}
+
+/* スマートフォン用のスタイル（画面幅が480px以下の場合に適用） */
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
