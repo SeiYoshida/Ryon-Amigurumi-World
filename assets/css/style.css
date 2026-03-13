@@ -185,7 +185,7 @@ hero
     margin: 0;
     
     display: flex;
-    background-image: url(/assets/image/amigurumi/FAS00116.JPG);
+    background-image: url(../image/amigurumi/FAS00116.JPG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
